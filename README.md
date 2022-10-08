@@ -68,7 +68,7 @@ This section focusses on deploying sample application into customer sites (Cloud
 2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted)<br>
 ![image](images/013ce1login.png)
 
-1st CE, enter/select following value and leave other values default
+1st CE, enter/select following values and leave other values default
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID values copied earlier |
@@ -87,6 +87,13 @@ This section focusses on deploying sample application into customer sites (Cloud
 | Certified Hardware | kvm-voltstack-combo |
 | Primary Outside NIC | eth0 |
 | Latitude / Longtitude | 1.28 / 103.9 |
+
+2.4) Approve New Site Registration: Manage > Site Management > Registrations (Click on the two green ticks on 1st and 2nd CEs to approve the registrations)<br>
+![image](images/014ceregistration.png)<br>
+The New Sites will be moved to Other Registrations after approval<br>
+![image](images/015otherregistration.png)<br>
+Monitor the New Sites status: Sites > Site List (Until there are online and turned green)<br>
+![image](images/016ceturngreen.png)<br>
 
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
