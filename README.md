@@ -23,6 +23,13 @@
 <a id="acc"></a><br>
 <h4>SECTION 1: Prepare App Stack CE Sites</a></h4>
 This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
+1.1) Login to XC account at https://console.ves.volterra.io/ (Lab tenant will be provided)<br>
+<br> 
+1.2) Prepare 2x CE sites in VMware/KVM/Public Cloud (min 4vCPU, 16GB, 64GB storage), totally isolated network environment like VPC/vNET or can be in the same subnet for on-premise.<br>
+<br>
+1.3) Navigate to:<br>
+
+![image](images/002ceandedge.png)<br>
  
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
