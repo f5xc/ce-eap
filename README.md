@@ -32,7 +32,8 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/002ceandedge.png)<br>
 
 1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens<br>
-![image](images/003sitetokens.png)<br>
+![image](images/003sitetokens.png)
+![image](images/003addsitetoken.png)<br>
 
 1.5) Create K8s Cluster (Keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
 ![image](images/004k8scluster.png)
