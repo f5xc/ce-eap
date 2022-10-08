@@ -3,18 +3,51 @@
 <h3>Edge Application Platform</h3>
 
 ![image](images/001ce.png)<br>
+<a id="toc"></a>
 <br>
 <h3>Table of Contents</h3>
 <a href="#pre">PRE-REQUISITE<a><br>
-SECTION 1: Prepare App Stack CE Sites<br>
-SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites<br>
-SECTION 3: Connect Backend App to Frontend App<br>
-SECTION 4: Configure WAAP<br>
-SECTION 5: Quick Comparison on generic Kubernetes Deployment vs XC vK8s (App Stack)<br>
-ACKNOWLEDGEMENT<br>
+<a href="#apc">SECTION 1: Prepare App Stack CE Sites</a><br>
+<a href="#dap">SECTION 2: Deploy the sample Frontend and Backend apps to the App Stack at Customer Sites</a><br>
+<a href="#cap">SECTION 3: Connect Backend App to Frontend App</a><br>
+<a href="#cwp">SECTION 4: Configure WAAP</a><br>
+<a href="#k8s">SECTION 5: Quick Comparison on generic Kubernetes Deployment vs XC vK8s (App Stack)</a><br>
+<a href="#ack">ACKNOWLEDGEMENT</a><br>
 <br>
 <h4><a id="pre">PRE-REQUISITE</a></h4>
 •	F5 Distributed Cloud credential<br>
 •	Laptop/desktop browser with internet connectivity<br>
 •	Two VMs, either on public cloud or on-premise (VMware/KVM)<br>
 <br>
+<a href="#toc">Table of Content</a>
+<a id="acc"></a><br>
+<h4>SECTION 1: Prepare App Stack CE Sites</a></h4>
+This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
+ 
+<h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
+This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
+
+<h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
+This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
+
+<h4>SECTION 4: Configure WAAP</a></h4>
+This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
+
+<h4>SECTION 5: Quick Comparison on generic Kubernetes Deployment vs F5XC Managed K8s/vK8s (App Stack)</a></h4>
+This section focusses on comparing generic Kubernetes Deployment and F5XC Kubernetes<br><br>
+
+<a href="#toc">Table of Content</a>
+<a id="ack"></a>
+<br>
+<h4>Acknowledgement</h4>
+1)	Klark Ooi, Channel Partnership - APCJ, F5, Lab Author<br>
+<br>
+Please provide your feedback about this Lab session at following URL, thank you!<br>
+<br>
+https://forms.office.com/r/js15ACgWwH<br>
+<br>
+Next labs, Bot Protection, automated (scripted) provision, and more<br>
+Look forward to seeing you again at next lab.<br>
+<br>
+
+
