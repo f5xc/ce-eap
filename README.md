@@ -35,15 +35,27 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/003sitetokens.png)
 ![image](images/003addsitetoken.png)<br>
 
-1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
+1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two Clusters with Name frontend and backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
 ![image](images/006createk8s.png)<br>
+![image](images/010saveandexit.png)<br>
+![image](images/004k8scluster.png)
+![image](images/005addk8s.png)
+![image](images/006createk8sbackend.png)<br>
+![image](images/010saveandexit.png)<br>
 
-1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add App Stack with Name frontend and backend)<br>
+1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add two App Stack Sites with Name frontend and backend)<br>
 ![image](images/007addappstack.png)
+![image](images/007addappstacksite.png)
 ![image](images/008addappstackfrontend.png)
-  
+![image](images/009advancedconfig.png)
+![image](images/010saveandexit.png)<br>
+![image](images/007addappstack.png)
+![image](images/007addappstacksite.png)
+![image](images/011addappstackbackend.png)
+![image](images/012advancedconfig.png)
+![image](images/010saveandexit.png)<br>
 
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
