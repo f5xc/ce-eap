@@ -20,7 +20,7 @@
 •	Two VMs, either on public cloud or on-premise (VMware/KVM)<br>
 <br>
 <a href="#toc">Table of Content</a>
-<a id="acc"></a><br>
+<a id="apc"></a><br>
 <h4>SECTION 1: Prepare App Stack CE Sites</a></h4>
 This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 1.1) Login to XC account at https://console.ves.volterra.io/ (Lab tenant will be provided)<br>
@@ -31,9 +31,10 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 
 ![image](images/002ceandedge.png)<br>
 
-1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens (Add Site Token with Name like yourname-token)<br>
+1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens (Add Site Token with Name like yourname-token, copy the UID value once Site Token created for later use)<br>
 ![image](images/003sitetokens.png)
-![image](images/003addsitetoken.png)<br>
+![image](images/003addsitetoken.png)
+![image](images/003copysitetokenuid.png)<br>
 
 1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two Clusters with Name frontend and backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
 ![image](images/004k8scluster.png)
@@ -56,9 +57,16 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/011addappstackbackend.png)
 ![image](images/012advancedconfig.png)
 ![image](images/010saveandexit.png)<br>
-
+<a id="dap"></a><br>
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
+
+2.1) Use the Site Token UID copied earlier to initialise the two Customer Sites (Cloud or Edge).<br>
+
+2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity.<br>
+
+2.3) Remote login into both Customer Sites (Cloud or Edge) VMs for configuration (E.g., ssh admin@privateipaddress default password is Volterra123).<br>
+![image](images/013ce1login.png)
 
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
