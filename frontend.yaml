@@ -1,0 +1,40 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+     containers:
+      - name: frontend
+        image: f5devcentral/f5-demo-httpd:nginx
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: F5DEMO_APP
+          value: "frontend"
+        - name: F5DEMO_BACKEND_URL
+          value: http://10.1.1.4:8081/backend.shtml
+        ports:
+        - containerPort: 80
