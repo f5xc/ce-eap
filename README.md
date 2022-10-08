@@ -68,7 +68,7 @@ This section focusses on deploying sample application into customer sites (Cloud
 2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted)<br>
 ![image](images/013ce1login.png)
 
-1st CE, enter following value and leave other values default
+1st CE, enter/select following value and leave other values default
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID values copied earlier |
@@ -78,7 +78,7 @@ This section focusses on deploying sample application into customer sites (Cloud
 | Primary Outside NIC | eth0 |
 | Latitude / Longtitude | 1.28 / 103.9 |
 
-2nd CE, enter following values and leave other values default
+2nd CE, enter/select following values and leave other values default
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
