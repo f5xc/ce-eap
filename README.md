@@ -65,8 +65,28 @@ This section focusses on deploying sample applications into customer sites (Clou
 
 2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity.<br>
 
-2.3) Remote login into both Customer Sites (Cloud or Edge) VMs for configuration (E.g., ssh admin@privateipaddress default password).<br>
+2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted).<br>
 ![image](images/013ce1login.png)
+
+1st CE
+| Field | Value | 
+| --------------- | --------------- |
+| Token | Site Token UID value copied earlier |
+| Cluster Name | frontend |
+| Hostname | frontend |
+| Certified Hardware | kvm-voltstack-combo |
+| Primary Outside NIC | eth0 |
+| Latitude / Longtitude | 1.28 / 103.9 |
+
+2nd CE
+| Field | Value | 
+| --------------- | --------------- |
+| Token | Site Token UID value copied earlier |
+| Cluster Name | backend |
+| Hostname | backend |
+| Certified Hardware | kvm-voltstack-combo |
+| Primary Outside NIC | eth0 |
+| Latitude / Longtitude | 1.28 / 103.9 |
 
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
