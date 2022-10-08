@@ -30,7 +30,15 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 1.3) Navigate to:<br>
 
 ![image](images/002ceandedge.png)<br>
- 
+
+1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens<br>
+![image](images/003sitetokens.png)<br>
+
+1.5) Create K8s Cluster (Keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
+![image](images/004k8scluster.png)
+![image](images/005addk8s.png)
+![image](images/006createk8s.png)<br>
+
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
 
