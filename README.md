@@ -59,7 +59,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/010saveandexit.png)<br>
 <a id="dap"></a><br>
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
-This section focusses on deploying sample applications into customer sites (Cloud or Edge) running App Stack<br><br>
+This section focusses on deploying sample application into customer sites (Cloud or Edge) running App Stack<br><br>
 
 2.1) Use the Site Token UID copied earlier to initialise the two Customer Sites (Cloud or Edge).<br>
 
