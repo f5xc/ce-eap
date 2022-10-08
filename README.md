@@ -65,7 +65,7 @@ This section focusses on deploying sample applications into customer sites (Clou
 
 2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity.<br>
 
-2.3) Remote login into both Customer Sites (Cloud or Edge) VMs for configuration (E.g., ssh admin@privateipaddress default password is Volterra123).<br>
+2.3) Remote login into both Customer Sites (Cloud or Edge) VMs for configuration (E.g., ssh admin@privateipaddress default password).<br>
 ![image](images/013ce1login.png)
 
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
