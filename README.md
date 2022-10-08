@@ -25,7 +25,7 @@
 This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 1.1) Login to XC account at https://console.ves.volterra.io/ (Lab tenant will be provided)<br>
 <br> 
-1.2) Prepare 2x CE sites in VMware/KVM/Public Cloud (min 4vCPU, 16GB, 64GB storage), totally isolated network environment like VPC/vNET or can be in the same subnet for on-premise.<br>
+1.2) Prepare 2x CE sites in VMware/KVM/Public Cloud (min 4vCPU, 16GB, 64GB storage), totally isolated network environment like VPC/vNET or can be in the same subnet for on-premise<br>
 <br>
 1.3) Navigate to:<br>
 
@@ -61,11 +61,11 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample application into customer sites (Cloud or Edge) running App Stack<br><br>
 
-2.1) Use the Site Token UID copied earlier to initialise the two Customer Sites (Cloud or Edge).<br>
+2.1) Use the Site Token UID copied earlier to initialise the two Customer Sites (Cloud or Edge)<br>
 
-2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity.<br>
+2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity<br>
 
-2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted).<br>
+2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted)<br>
 ![image](images/013ce1login.png)
 
 1st CE
