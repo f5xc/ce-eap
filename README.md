@@ -2,5 +2,5 @@
 
 <h3>Edge Application Platform</h3>
 
-![image](images/02ce.png)<br>
+![image](images/01ce.png)<br>
 
