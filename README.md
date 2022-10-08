@@ -55,7 +55,7 @@ This section focusses on comparing generic Kubernetes Deployment and F5XC Kubern
 <a id="ack"></a>
 <br>
 <h4>Acknowledgement</h4>
-1)	Klark Ooi, Channel Partnership - APCJ, F5, Lab Author<br>
+1)	Klark Ooi, Channel Management - APCJ, F5, Lab Author<br>
 <br>
 Please provide your feedback about this Lab session at following URL, thank you!<br>
 <br>
