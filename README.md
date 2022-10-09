@@ -31,12 +31,12 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 
 ![image](images/002ceandedge.png)<br>
 
-1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens (Add Site Token with Name like yourname-token, copy the UID value once Site Token created for later use)<br>
+1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens (Add new Site Token with Name like yourname-token, copy the UID value once Site Token created for later use)<br>
 ![image](images/003sitetokens.png)
 ![image](images/003addsitetoken.png)
 ![image](images/003copysitetokenuid.png)<br>
 
-1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two Clusters with Name frontend and backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
+1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two new Clusters with Name frontend and backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
 ![image](images/006createk8s.png)<br>
@@ -46,7 +46,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/006createk8sbackend.png)<br>
 ![image](images/010saveandexit.png)<br>
 
-1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add two App Stack Sites with Name frontend and backend)<br>
+1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add two new App Stack Sites with Name - frontend and backend)<br>
 ![image](images/007addappstack.png)
 ![image](images/007addappstacksite.png)
 ![image](images/008addappstackfrontend.png)
@@ -61,24 +61,24 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 <h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
 This section focusses on deploying sample application into customer sites (Cloud or Edge) running App Stack<br><br>
 
-2.1) Use the Site Token UID copied earlier to initialise the two Customer Sites (Cloud or Edge)<br>
+2.1) Use the Site Token UID value copied earlier to initialise the two Customer Sites (Cloud or Edge)<br>
 
 2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity<br>
 
-2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted)<br>
+2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted - enter existing and desire new password)<br>
 ![image](images/013ce1login.png)
 
-1st CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on map - enter your desire values)
+1st CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
 | Field | Value | 
 | --------------- | --------------- |
-| Token | Site Token UID values copied earlier |
+| Token | Site Token UID value copied earlier |
 | Cluster Name | frontend |
 | Hostname | frontend |
 | Certified Hardware | kvm-voltstack-combo |
 | Primary Outside NIC | eth0 |
 | Latitude / Longtitude | 1.28 / 103.9 |
 
-2nd CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on map - enter your desire values)
+2nd CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
