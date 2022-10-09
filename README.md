@@ -94,7 +94,7 @@ The New Sites will be moved to Other Registrations after approval<br>
 ![image](images/015otherregistration.png)<br>
 Monitor the New Sites status: Sites > Site List (Until there are online and turned green)<br>
 ![image](images/016ceturngreen.png)<br>
-
+<a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
 
