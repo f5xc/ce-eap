@@ -109,15 +109,20 @@ This section focusses on deploying sample application into customer sites (Cloud
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect.png)<br>
 
-2.4) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
+2.5) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
 ![image](images/020namespacevalue.png)<br>
 
-2.5) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step), example of Linux command:<br>
+2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step), example of Linux command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace.png)<br>
 
-2.6) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+2.7) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
+![image](images/021deployfrontend.png)<br>
+
+2.8) Deploy backend app using backend.yaml file (extract backend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
+![image](images/022deploybackend.png)<br>
 
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
