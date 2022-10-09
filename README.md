@@ -98,15 +98,23 @@ This section focusses on deploying sample application into customer sites (Cloud
 2.1) Download the Global Kubeconfig files from both sites: Managed K8s > Overview<br>
 
 ![image](images/017downloadkubeconfig.png)<br>
-<br>
 
 2.2) Download kubectl binary <a href="https://kubernetes.io/docs/tasks/tools/#kubectl">tool</a> on your laptop (OS supported - Windows/Mac/Linux)<br>
 
-2.3) Test kubectl connectivity to the K8s cluster with downloaded kubectl Global Kubeconfig file and kubectl binary. For e.g., kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
-
+2.3) Test kubectl connectivity to the K8s cluster with downloaded kubectl Global Kubeconfig file and kubectl binary, example of Linux command:<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect.png)<br>
 
-2.4)
+2.4) Deploy frontend app to your namespace, example of Linux command:<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
+![image](images/019createnamespace.png)<br>
+
+2.5) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
+![image](images/020namespacevalue.png)<br>
+
+2.6) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
+
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
