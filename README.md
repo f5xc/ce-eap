@@ -98,6 +98,11 @@ Monitor the New Sites status: Sites > Site List (Until there are online and turn
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
 
+3.1) Download the Global Kubeconfig files from both sites: Managed K8s > Overview<br>
+![image](images/017downloadkubeconfig.png)<br>
+
+3.2) Download kubectl <a href="https://kubernetes.io/docs/tasks/tools/#kubectl">tool</a> on your laptop (OS supported - Windows/Mac/Linux)<br>
+
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
 
