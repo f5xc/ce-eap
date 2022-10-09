@@ -57,15 +57,12 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/011addappstackbackend.png)
 ![image](images/012advancedconfig.png)
 ![image](images/010saveandexit.png)<br>
-<a id="dap"></a><br>
-<h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
-This section focusses on deploying sample application into customer sites (Cloud or Edge) running App Stack<br><br>
 
-2.1) Use the Site Token UID value copied earlier to initialise the two Customer Sites (Cloud or Edge)<br>
+1.7) Use the Site Token UID value copied earlier to initialise the two Customer Sites (Cloud or Edge)<br>
 
-2.2) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity<br>
+1.8) Instantiate two Customer Sites (Cloud or Edge) for both App Stack Sites. If using Public Cloud like AWS/Azure/GCP then create cloud credential, otherwise download KVM/VMware <a href="https://docs.cloud.f5.com/docs/images">images</a> and bring up the two VMs with Internet connectivity<br>
 
-2.3) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted - enter existing and desire new password)<br>
+1.9) Remote login into two Customer Sites (Cloud or Edge) VMs to complete the CE configuration (E.g., ssh admin@privateipaddress with default password, a mandatory password change will be prompted - enter existing and desire new password)<br>
 ![image](images/013ce1login.png)
 
 1st CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
@@ -88,20 +85,31 @@ This section focusses on deploying sample application into customer sites (Cloud
 | Primary Outside NIC | eth0 |
 | Latitude / Longtitude | 1.28 / 103.9 |
 
-2.4) Approve New Site Registration: Manage > Site Management > Registrations (Click on the two green ticks on 1st and 2nd CEs to approve the registrations)<br>
+1.10) Approve New Site Registration: Manage > Site Management > Registrations (Click on the two green ticks on 1st and 2nd CEs to approve the registrations)<br>
 ![image](images/014ceregistration.png)<br>
 The New Sites will be moved to Other Registrations after approval<br>
 ![image](images/015otherregistration.png)<br>
 Monitor the New Sites status: Sites > Site List (Until there are online and turned green)<br>
-![image](images/016ceturngreen.png)<br>
+![image](images/016ceturngreen.png)<br><br>
+
+<h4>SECTION 2: Deploy the sample frontend and backend apps to the App Stack at Customer Sites</a></h4>
+This section focusses on deploying sample application into customer sites (Cloud or Edge) running App Stack<br>
+<a id="dap"></a><br>
+2.1) Download the Global Kubeconfig files from both sites: Managed K8s > Overview<br>
+
+![image](images/017downloadkubeconfig.png)<br>
+<br>
+
+2.2) Download kubectl binary <a href="https://kubernetes.io/docs/tasks/tools/#kubectl">tool</a> on your laptop (OS supported - Windows/Mac/Linux)<br>
+
+2.3) Test kubectl connectivity to the K8s cluster with downloaded kubectl Global Kubeconfig file and kubectl binary. For e.g., kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
+
+![image](images/018kubectlconnect.png)<br>
+
+2.4)
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
-
-3.1) Download the Global Kubeconfig files from both sites: Managed K8s > Overview<br>
-![image](images/017downloadkubeconfig.png)<br>
-
-3.2) Download kubectl <a href="https://kubernetes.io/docs/tasks/tools/#kubectl">tool</a> on your laptop (OS supported - Windows/Mac/Linux)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
