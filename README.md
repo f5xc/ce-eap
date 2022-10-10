@@ -139,7 +139,7 @@ Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Mana
 Option 1: Validate backend pod and service with kubectl binary, example of linux command:<br>
 ![image](images/024verifybackend.png)<br>
 Option 2: Validate backend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > backend > Running Pods<br>
-![image](images/025verifybackendxc.png)<br>
+![image](images/026verifybackendxc.png)<br>
 
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
