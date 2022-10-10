@@ -101,11 +101,11 @@ This section focusses on deploying sample application into customer sites (Cloud
 
 2.2) Download kubectl binary <a href="https://kubernetes.io/docs/tasks/tools/#kubectl">tool</a> on your laptop (OS supported - Windows/Mac/Linux)<br>
 
-2.3) Test kubectl connectivity to the 1st CE K8s cluster with downloaded kubectl Global Kubeconfig file and kubectl binary, example of Linux command:<br>
+2.3) Test kubectl connectivity to the 1st CE K8s cluster with downloaded kubectl binary and Global Kubeconfig file, example of Linux command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect1st.png)<br>
 
-2.4) Test kubectl connectivity to the 2nd CE K8s cluster with downloaded kubectl Global Kubeconfig file and kubectl binary, example of Linux command:<br>
+2.4) Test kubectl connectivity to the 2nd CE K8s cluster with downloaded kubectl binary and Global Kubeconfig file and kubectl binary, example of Linux command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect.png)<br>
 
