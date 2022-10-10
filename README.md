@@ -116,13 +116,24 @@ This section focusses on deploying sample application into customer sites (Cloud
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace.png)<br>
 
-2.7) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step), example of Linux command:<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
+![image](images/019createnamespace2nd.png)<br>
+
+2.8) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
 ![image](images/021deployfrontend.png)<br>
 
-2.8) Deploy backend app using backend.yaml file (extract backend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+2.9) Deploy backend app using backend.yaml file (extract backend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
 ![image](images/022deploybackend.png)<br>
+
+2.10) Validate deployment status for both frontend and backend with kubectl binary, example of linux command:<br>
+
+1st CE - frontend<br>
+![image](images/023verifyfrontend.png)<br>
+2nd CE - backend<br>
+![image](images/024verifybackend.png)<br>
 
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
