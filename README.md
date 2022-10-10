@@ -128,12 +128,16 @@ This section focusses on deploying sample application into customer sites (Cloud
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
 ![image](images/022deploybackend.png)<br>
 
-2.10) Validate deployment status for both frontend and backend with kubectl binary, example of linux command:<br>
+2.10) Validate deployment status for both frontend and backend:<br>
 
-1st CE - frontend<br>
+1st CE<br>
+Validate frontend pod and service with kubectl binary, example of linux command:<br>
 ![image](images/023verifyfrontend.png)<br>
-2nd CE - backend<br>
+Validate frontend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > frontend > Running Pods<br>
+![image](images/025verifyfrontendxc.png)<br>
+2nd CE - backend pod and service, validate with kubectl binary, example of linux command:<br>
 ![image](images/024verifybackend.png)<br>
+
 
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
