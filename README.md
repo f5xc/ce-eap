@@ -135,7 +135,7 @@ This section focusses on deploying sample application into customer sites (Cloud
 
 2.10) Validate deployment status for both frontend and backend:<br>
 
-1st CE<br>
+1st CE
 Option 1: Validate frontend pod and service with kubectl binary, example of linux commands:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
@@ -143,7 +143,7 @@ Option 1: Validate frontend pod and service with kubectl binary, example of linu
 Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > frontend > Running Pods<br>
 ![image](images/025verifyfrontendxc.png)<br>
 
-2nd CE<br>
+2nd CE
 Option 1: Validate backend pod and service with kubectl binary, example of linux commands:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
@@ -153,7 +153,7 @@ Option 2: Validate backend pod and service on F5XC: Cloud and Edge Sites > Manag
 
 <a id="cap"></a><br>
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
-This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
+This section focusses on connecting sample applications - Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
 
 3.1) Create the app origin pool for both frontend and backend apps<br>
 Populate the Kubernetes service names and namespace for the app origin pool creation<br>
