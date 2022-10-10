@@ -178,6 +178,9 @@ Examples: frontend.demo / backend.demo<br>
 
 ![image](images/027createoriginpool.png)<br>
 ![image](images/028createmetadata.png)<br>
+![image](images/029addorigin.png)<br>
+![image](images/030createport.png)
+![image](images/010saveandexit.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
