@@ -177,6 +177,7 @@ Examples: frontend.demo / backend.demo<br>
 | Select Network on the Site | Outside Network |
 
 ![image](images/027createoriginpool.png)<br>
+![image](images/028createmetadata.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
