@@ -131,14 +131,14 @@ This section focusses on deploying sample application into customer sites (Cloud
 2.10) Validate deployment status for both frontend and backend:<br>
 
 1st CE<br>
-Validate frontend pod and service with kubectl binary, example of linux command:<br>
+Option 1: Validate frontend pod and service with kubectl binary, example of linux command:<br>
 ![image](images/023verifyfrontend.png)<br>
-Validate frontend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > frontend > Running Pods<br>
+Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > frontend > Running Pods<br>
 ![image](images/025verifyfrontendxc.png)<br>
 2nd CE<br>
-Validate backend pod and service with kubectl binary, example of linux command:<br>
+Option 1: Validate backend pod and service with kubectl binary, example of linux command:<br>
 ![image](images/024verifybackend.png)<br>
-Validate backend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > backend > Running Pods<br>
+Option 2: Validate backend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > backend > Running Pods<br>
 ![image](images/025verifybackendxc.png)<br>
 
 <a id="cap"></a><br>
