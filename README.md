@@ -155,6 +155,27 @@ Option 2: Validate backend pod and service on F5XC: Cloud and Edge Sites > Manag
 <h4>SECTION 3: Connect Backend App to Frontend App</a></h4>
 This section focusses on connecting sample applications (Frontend and Backend on customer sites (Cloud or Edge) running App Stack<br><br>
 
+3.1) Create the app origin pool for both frontend and backend apps<br>
+Populate the Kubernetes service names and namespace for the app origin pool creation<br>
+Format: servicename.namespace<br>
+Examples: frontend.demo / backend.demo<br>
+
+1st CE
+| Field | Value | 
+| --------------- | --------------- |
+| Name | frontend |
+| Virtual-Site or Site or Network | Site |
+| Service Name | frontend.demo |
+| Select Network on the Site | Outside Network |
+
+2nd CE
+| Field | Value | 
+| --------------- | --------------- |
+| Name | backend |
+| Virtual-Site or Site or Network | Site |
+| Service Name | backend.demo |
+| Select Network on the Site | Outside Network |
+
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
 
