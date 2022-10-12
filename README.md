@@ -207,6 +207,8 @@ Distributed Apps > Manage > Load Balancers > HTTP Load Balancers > Add HTTP load
 ![image](images/040createhttplb.png)<br>
 ![image](images/041addorigin.png)<br>
 ![image](images/010saveandexit.png)<br>
+![image](images/042lbfqdn.png)<br>
+![image](images/043fqdnready.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
