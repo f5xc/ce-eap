@@ -66,11 +66,8 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 
 1st CE<br>
 ![image](images/013ce1login.png)<br>
-
-2nd CE<br>
-![image](images/013ce2login.png)<br>
-  
-1st CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
+1st CE, enter/select following values and leave other values default<br>
+(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)<br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
@@ -80,8 +77,11 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Default Fleet Name | |
 | Certified Hardware | kvm-voltstack-combo |  
 | Primary Outside NIC | eth0 |
-
-2nd CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
+  
+2nd CE<br>
+![image](images/013ce2login.png)<br>
+2nd CE, enter/select following values and leave other values default<br>
+(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)<br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
