@@ -77,7 +77,9 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Default Fleet Name | |
 | Certified Hardware | kvm-voltstack-combo |  
 | Primary Outside NIC | eth0 |
-  
+
+![image](images/013ceexit.png)<br>
+
 2nd CE<br>
 ![image](images/013ce2login.png)<br>
 2nd CE, enter/select following values and leave other values default<br>
@@ -92,7 +94,11 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Certified Hardware | kvm-voltstack-combo |
 | Primary Outside NIC | eth0 |
 
-1.10) Approve New Site Registration: Manage > Site Management > Registrations (Click on the two blue ticks on 1st and 2nd CEs to approve the registrations)<br>
+![image](images/013ceexit.png)<br>
+  
+1.10) Approve New Site Registration: Manage > Site Management > Registrations<br>
+(Click on the two blue ticks on 1st and 2nd CEs to approve the registrations)<br>
+![image](images/014approveregistration.png)<br>
 ![image](images/014ceregistration.png)<br>
 The New Sites will be moved to Other Registrations after approval<br>
 ![image](images/015otherregistration.png)<br>
