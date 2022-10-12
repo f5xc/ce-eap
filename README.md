@@ -192,6 +192,7 @@ backend.demo<br>
 
 3.2) Create TCP Load-balancer exposing backend app (2nd CE) to frontend app (1st CE):<br>
 Distributed Apps > Manage > Load Balancers > TCP Load Balancers > Add TCP load balancer<br>
+![image](images/033addtcplb.png)<br>
 ![image](images/033createtcplb.png)<br>
 ![image](images/034selectbackend.png)<br>
 ![image](images/035advertiseconfig.png)<br>
