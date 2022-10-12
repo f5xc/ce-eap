@@ -235,6 +235,7 @@ Distributed Apps > Manage > Load Balancers > HTTP Load Balancers > Add HTTP load
 ![image](images/040createhttplb.png)<br>
 ![image](images/041addorigin.png)<br>
 ![image](images/010saveandexit.png)<br>
+Example, yourname.kyndryl.edgecloud.ml<br>
 ![image](images/042lbfqdn.png)<br>
 ![image](images/043fqdndone.png)<br>
 
