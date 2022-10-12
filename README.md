@@ -1,8 +1,21 @@
-<h2>F5 Distributed Cloud - Edge App Platform (EAP)</h2>
+<h2>F5 Distributed Cloud - Edge Application Platform (EAP)</h2>
 
 <h3>Edge Application Platform</h3>
 
 ![image](images/001ce.png)<br>
+
+<h3>EAP Overview</h3>
+
+![image](images/001overview.png)<br>
+
+<h3>Objectives</h3>
+1. Develop fundamental understanding of F5XC Customer Edge Application Platform (EAP) deployment and management</br>
+2. Distributed load-balancing (L3/4/7)<br>
+3. WAAP<br>
+4. Basic site-to-site networking, custom advertisement of services, virtual site, K8s
+discovery for containerized apps<br>
+5. F5XC operation and security observability and monitoring<br>
+
 <a id="toc"></a>
 <br>
 <h3>Table of Contents</h3>
