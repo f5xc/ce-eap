@@ -195,6 +195,8 @@ Distributed Apps > Manage > Load Balancers > TCP Load Balancers > Add TCP load b
 ![image](images/033createtcplb.png)<br>
 ![image](images/034selectbackend.png)<br>
 ![image](images/035advertiseconfig.png)<br>
+![image](images/036advertiseadd.png)<br>
+![image](images/037advertisewhere.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
