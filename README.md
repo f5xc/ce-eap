@@ -74,21 +74,23 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
-| Cluster Name | frontend |
-| Hostname | frontend |
-| Certified Hardware | kvm-voltstack-combo |
-| Primary Outside NIC | eth0 |
+| Site Name | kyndryl-frontend |
+| Hostname | kyndryl-frontend |
 | Latitude / Longtitude | 1.28 / 103.9 |
+| Default Fleet Name | |
+| Certified Hardware | kvm-voltstack-combo |  
+| Primary Outside NIC | eth0 |
 
 2nd CE, enter/select following values and leave other values default (Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
-| Cluster Name | backend |
-| Hostname | backend |
+| Site Name | kyndryl-backend |
+| Hostname | kyndryl-backend |
+| Latitude / Longtitude | 1.28 / 103.9 |
+| Default Fleet Name | |
 | Certified Hardware | kvm-voltstack-combo |
 | Primary Outside NIC | eth0 |
-| Latitude / Longtitude | 1.28 / 103.9 |
 
 1.10) Approve New Site Registration: Manage > Site Management > Registrations (Click on the two green ticks on 1st and 2nd CEs to approve the registrations)<br>
 ![image](images/014ceregistration.png)<br>
