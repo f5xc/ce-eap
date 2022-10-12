@@ -176,9 +176,17 @@ Examples: frontend.demo / backend.demo<br>
 | Service Name | backend.demo |
 | Select Network on the Site | Outside Network |
 
+frontend.demo<br>
 ![image](images/027createoriginpool.png)<br>
 ![image](images/028createmetadata.png)<br>
 ![image](images/029addorigin.png)<br>
+![image](images/030createport.png)
+![image](images/010saveandexit.png)<br>
+
+backend.demo<br>
+![image](images/027createoriginpool.png)<br>
+![image](images/031createbackend.png)<br>
+![image](images/032addbackendorigin.png)<br>
 ![image](images/030createport.png)
 ![image](images/010saveandexit.png)<br>
 
