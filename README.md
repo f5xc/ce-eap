@@ -1,4 +1,4 @@
-<h2>F5 Distributed Cloud Customer Sites (Cloud or Edge) App Stack</h2>
+<h2>F5 Distributed Cloud - Edge App Platform (EAP)</h2>
 
 <h3>Edge Application Platform</h3>
 
