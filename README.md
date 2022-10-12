@@ -190,9 +190,11 @@ backend.demo<br>
 ![image](images/030createport.png)
 ![image](images/010saveandexit.png)<br>
 
-3.2) Create TCP Load-balancer to expose backend app from 1st CE to the frontend app at 2nd CE backend app:<br>
+3.2) Create TCP Load-balancer exposing backend app (2nd CE) to frontend app (1st CE):<br>
 Distributed Apps > Manage > Load Balancers > TCP Load Balancers > Add TCP load balancer<br>
-
+![image](images/033createtcplb.png)<br>
+![image](images/034selectbackend.png)<br>
+![image](images/035advertiseconfig.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
