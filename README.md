@@ -36,7 +36,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/003addsitetoken.png)
 ![image](images/003copysitetokenuid.png)<br>
 
-1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two new Clusters with Name frontend and backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack)<br>
+1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters (Add two new Clusters with Name yourname-frontend and yourname-backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
 ![image](images/006createk8s.png)<br>
@@ -46,7 +46,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/006createk8sbackend.png)<br>
 ![image](images/010saveandexit.png)<br>
 
-1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add two new App Stack Sites with Name - frontend and backend)<br>
+1.6) Create App Stack Site: Manage > Site Management > App Stack Sites (Add two new App Stack Sites with Name - yourname-frontend and yourname-backend)<br>
 ![image](images/007addappstack.png)
 ![image](images/007addappstacksite.png)
 ![image](images/008addappstackfrontend.png)
@@ -184,14 +184,14 @@ Examples: frontend.demo / backend.demo<br>
 | Service Name | backend.demo |
 | Select Network on the Site | Outside Network |
 
-frontend.demo<br>
+yourname-frontend.demo<br>
 ![image](images/027createoriginpool.png)<br>
 ![image](images/028createmetadata.png)<br>
 ![image](images/029addorigin.png)<br>
 ![image](images/030createport.png)
 ![image](images/010saveandexit.png)<br>
 
-backend.demo<br>
+yourname-backend.demo<br>
 ![image](images/027createoriginpool.png)<br>
 ![image](images/031createbackend.png)<br>
 ![image](images/032addbackendorigin.png)<br>
