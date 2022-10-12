@@ -163,7 +163,7 @@ Examples: frontend.demo / backend.demo<br>
 1st CE
 | Field | Value | 
 | --------------- | --------------- |
-| Name | frontend |
+| Name | kyndryl-frontend |
 | Virtual-Site or Site or Network | Site |
 | Service Name | frontend.demo |
 | Select Network on the Site | Outside Network |
@@ -171,7 +171,7 @@ Examples: frontend.demo / backend.demo<br>
 2nd CE
 | Field | Value | 
 | --------------- | --------------- |
-| Name | backend |
+| Name | kyndryl-backend |
 | Virtual-Site or Site or Network | Site |
 | Service Name | backend.demo |
 | Select Network on the Site | Outside Network |
