@@ -201,6 +201,12 @@ Distributed Apps > Manage > Load Balancers > TCP Load Balancers > Add TCP load b
 ![image](images/038advertiseapply.png)<br>
 ![image](images/010saveandexit.png)<br>
 
+3.3) Create HTTP Load Balancer to expose frontend app to the Internet at Regional Edge (RE)<br>
+Distributed Apps > Manage > Load Balancers > HTTP Load Balancers > Add HTTP load balancer<br>
+![image](images/039createhttplb.png)<br>
+![image](images/040createhttplb.png)<br>
+![image](images/041addorigin.png)<br>
+
 <h4>SECTION 4: Configure WAAP</a></h4>
 This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
 
