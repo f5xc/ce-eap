@@ -49,7 +49,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/010saveandexit.png)<br>
 
 1.6) Create App Stack Site: Manage > Site Management > App Stack Sites<br>
-(Add two new App Stack Sites with Name - yourname-frontend and yourname-backend)<br>
+(Add two new App Stack Sites with Name: yourname-frontend and yourname-backend)<br>
 ![image](images/007addappstack.png)
 ![image](images/007addappstacksite.png)
 ![image](images/008addappstackfrontend.png)
