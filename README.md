@@ -7,6 +7,8 @@
 <h3>EAP Overview</h3>
 
 ![image](images/001overview.png)<br>
+![image](images/001frontendapp.png)<br>
+![image](images/001backendapp.png)<br>
 
 <h3>Objectives</h3>
 1. Develop fundamental understanding of F5XC Customer Edge Application Platform (EAP) deployment and management</br>
