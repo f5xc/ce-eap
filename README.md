@@ -216,7 +216,7 @@ Populate the Kubernetes service names and namespace for the app origin pool crea
 Format: servicename.namespace<br>
 Examples: frontend.demo / backend.demo<br>
 
-1st CE
+3.1.1) 1st CE
 | Field | Value | 
 | --------------- | --------------- |
 | Name | kyndryl-frontend |
@@ -232,7 +232,7 @@ yourname-frontend.demo<br>
 ![image](images/030createport.png)
 ![image](images/010saveandexit.png)<br>
 
-2nd CE
+3.1.2) 2nd CE
 | Field | Value | 
 | --------------- | --------------- |
 | Name | kyndryl-backend |
