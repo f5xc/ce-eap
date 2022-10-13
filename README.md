@@ -13,7 +13,7 @@
 <h3>Objectives</h3>
 1. Develop fundamental understanding of F5XC Customer Edge Application Platform (EAP) deployment and management</br>
 2. Distributed load-balancing (L3/4/7)<br>
-3. WAAP<br>
+3. Web Application and API Protection (WAAP)<br>
 4. Basic site-to-site networking, custom advertisement of services, virtual site, K8s
 discovery for containerized apps<br>
 5. F5XC operation and security observability and monitoring<br>
