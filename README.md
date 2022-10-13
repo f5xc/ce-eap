@@ -168,17 +168,27 @@ Example of Linux/Mac command:<br>
 ![image](images/019createnamespace2nd.png)<br>
 
 2.8) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
 ![image](images/021deployfrontend.png)<br>
 
 2.9) Deploy backend app using backend.yaml file (extract backend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
 ![image](images/022deploybackend.png)<br>
 
 2.10) Validate deployment status for both frontend and backend:<br>
 
 1st CE
-Option 1: Validate frontend pod and service with kubectl binary, example of linux commands:<br>
+Option 1: Validate frontend pod and service with kubectl binary<br> 
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 ![image](images/023verifyfrontend.png)<br>
@@ -187,6 +197,10 @@ Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Mana
 
 2nd CE
 Option 1: Validate backend pod and service with kubectl binary, example of linux commands:<br>
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 ![image](images/024verifybackend.png)<br>
