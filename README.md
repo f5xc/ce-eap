@@ -32,7 +32,7 @@ discovery for containerized apps<br>
 <h4><a id="pre">PRE-REQUISITE</a></h4>
 •	F5 Distributed Cloud credential<br>
 •	Laptop/desktop browser with internet connectivity<br>
-•	Two VMs, either on public cloud or on-premise (VMware/KVM)<br>
+•	Two VMs (as 2x CE sites - CE1 and CE2), either on public cloud or on-premise (VMware/KVM)<br>
 <br>
 <a href="#toc">Table of Content</a>
 <a id="apc"></a><br>
