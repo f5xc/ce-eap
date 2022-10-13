@@ -139,25 +139,31 @@ This section focusses on deploying sample application into customer sites (Cloud
 2.3) Test connectivity from your laptop to the 1st CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file<br>
 Example of Windows command:<br>
 kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
-Example of Linux command:<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect1st.png)<br>
 
 2.4) Test connectivity from your laptop to the 2nd CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file and kubectl binary<br> 
 Example of Windows command:<br>
 kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
-Example of Linux command:<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect.png)<br>
 
 2.5) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
 ![image](images/020namespacevalue.png)<br>
 
-2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step), example of Linux command:<br>
+2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace.png)<br>
 
-2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step), example of Linux command:<br>
+2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
+Example of Windows command:<br>
+kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
+Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace2nd.png)<br>
 
