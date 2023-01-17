@@ -47,13 +47,13 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/002ceandedge.png)<br>
 
 1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens<br>
-(Add new Site Token with Name format like yourname-token e.g., kyndryl-token, copy the UID value once Site Token created for later use)<br>
+(Add new Site Token with Name format like yourname-token e.g., yourname-token, copy the UID value once Site Token created for later use)<br>
 ![image](images/003sitetokens.png)
 ![image](images/003addsitetoken.png)
 ![image](images/003copysitetokenuid.png)<br>
 
 1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters<br>
-(Add two new Clusters with Name yourname-frontend and yourname-backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
+(Add two new Clusters with Name yourname-frontend and yourname-backend, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., yourname-frontend and yourname-backend)<br>
 1.5.1) yourname-frontend<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
@@ -93,8 +93,8 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
-| Site Name | kyndryl-frontend |
-| Hostname | kyndryl-frontend |
+| Site Name | yourname-frontend |
+| Hostname | yourname-frontend |
 | Latitude / Longtitude | 1.28 / 103.9 |
 | Default Fleet Name | |
 | Certified Hardware | kvm-voltstack-combo |  
@@ -109,8 +109,8 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
-| Site Name | kyndryl-backend |
-| Hostname | kyndryl-backend |
+| Site Name | yourname-backend |
+| Hostname | yourname-backend |
 | Latitude / Longtitude | 1.28 / 103.9 |
 | Default Fleet Name | |
 | Certified Hardware | kvm-voltstack-combo |
@@ -138,16 +138,16 @@ This section focusses on deploying sample application into customer sites (Cloud
 
 2.3) Test connectivity from your laptop to the 1st CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file<br>
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
+kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml get all<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
+./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect1st.png)<br>
 
 2.4) Test connectivity from your laptop to the 2nd CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file and kubectl binary<br> 
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
+kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml get all<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get all<br>
+./kubectl --kubeconfig ./ves_system_yourname-backend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect.png)<br>
 
 2.5) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
@@ -155,30 +155,30 @@ Example of Linux/Mac command:<br>
 
 2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
+kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml create namespace demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml create namespace demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace.png)<br>
 
 2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
+kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml create namespace demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml create namespace demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-backend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace2nd.png)<br>
 
 2.8) Deploy frontend app using frontend.yaml file (extract frontend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
+kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml apply -f frontend.yaml -n demo<br>
 ![image](images/021deployfrontend.png)<br>
 
 2.9) Deploy backend app using backend.yaml file (extract backend.yaml file from downloadable <a href="https://github.com/f5xc/ce-appstack/raw/main/edgeapp.zip">zip file</a>) to your namespace:<br>
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
+kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-backend_kubeconfig_global.yaml apply -f backend.yaml -n demo<br>
 ![image](images/022deploybackend.png)<br>
 
 2.10) Validate deployment status for both frontend and backend:<br>
@@ -186,11 +186,11 @@ Example of Linux/Mac command:<br>
 1st CE
 Option 1: Validate frontend pod and service with kubectl binary<br> 
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
-kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 ![image](images/023verifyfrontend.png)<br>
 Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > frontend > Running Pods<br>
 ![image](images/025verifyfrontendxc.png)<br>
@@ -198,11 +198,11 @@ Option 2: Validate frontend pod and service on F5XC: Cloud and Edge Sites > Mana
 2nd CE
 Option 1: Validate backend pod and service with kubectl binary, example of linux commands:<br>
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
-kubectl --kubeconfig ves_system_kyndryl-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
-./kubectl --kubeconfig ./ves_system_kyndryl-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-backend_kubeconfig_global.yaml get pod -o wide -n demo<br>
+./kubectl --kubeconfig ./ves_system_yourname-backend_kubeconfig_global.yaml get svc -o wide -n demo<br>
 ![image](images/024verifybackend.png)<br>
 Option 2: Validate backend pod and service on F5XC: Cloud and Edge Sites > Manage > Manage K8s > Deployments > backend > Running Pods<br>
 ![image](images/026verifybackendxc.png)<br>
@@ -219,7 +219,7 @@ Examples: frontend.demo / backend.demo<br>
 3.1.1) 1st CE
 | Field | Value | 
 | --------------- | --------------- |
-| Name | kyndryl-frontend |
+| Name | yourname-frontend |
 | Virtual-Site or Site or Network | Site |
 | Service Name | frontend.demo |
 | Select Network on the Site | Outside Network |
@@ -235,7 +235,7 @@ yourname-frontend.demo<br>
 3.1.2) 2nd CE
 | Field | Value | 
 | --------------- | --------------- |
-| Name | kyndryl-backend |
+| Name | yourname-backend |
 | Virtual-Site or Site or Network | Site |
 | Service Name | backend.demo |
 | Select Network on the Site | Outside Network |
@@ -265,7 +265,7 @@ Distributed Apps > Manage > Load Balancers > HTTP Load Balancers > Add HTTP load
 ![image](images/040createhttplb.png)<br>
 ![image](images/041addorigin.png)<br>
 ![image](images/010saveandexit.png)<br>
-Example, yourname.kyndryl.edgecloud.ml<br>
+Example, yourname.yourdomain.edgecloud.ml<br>
 ![image](images/042lbfqdn.png)<br>
 ![image](images/043fqdndone.png)<br>
 
