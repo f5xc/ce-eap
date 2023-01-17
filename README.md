@@ -47,13 +47,13 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/002ceandedge.png)<br>
 
 1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens<br>
-(Add new Site Token with Name format like yourname-token e.g., peter-token or kyndryl-token etc, please use your actual name for ease of identification/reference, copy and keep the UID value (saved it) once Site Token created for later use i.e., copy and paste)<br>
+(Add new Site Token with Name format like yourname-token e.g., peter-token or kyndryl-token etc, please use your actual name for uniqueness and ease of identification/reference, copy and keep the UID value (saved it) once Site Token created for later use i.e., copy and paste)<br>
 ![image](images/003sitetokens.png)
 ![image](images/003addsitetoken.png)
 ![image](images/003copysitetokenuid.png)<br>
 
 1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters<br>
-(Add two new Clusters with Name yourname-frontend and yourname-backend, e.g., kyndryl-frontend and kyndryl-backend, please use your actual name for ease of identification/reference, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
+(Add two new Clusters with Name yourname-frontend and yourname-backend, e.g., kyndryl-frontend and kyndryl-backend, please use your actual name for uniqueness and ease of identification/reference, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
 1.5.1) yourname-frontend<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
