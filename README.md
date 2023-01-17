@@ -53,7 +53,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/003copysitetokenuid.png)<br>
 
 1.5) Create K8s Cluster: Manage > Manage K8s > K8s Clusters<br>
-(Add two new Clusters with Name yourname-frontend and yourname-backend, e.g., kyndryl-frontend and kyndryl-backend, please use your actual name for uniqueness and ease of identification/reference, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
+(Add two new Clusters with Name yourname-frontend and yourname-backend, e.g., kyndryl-frontend and kyndryl-backend, please use your actual name - yourname value for uniqueness and ease of identification/reference, keep the Name consistent and the same for K8s Cluster, App Stack, and the CE Cluster Name of the App Stack e.g., kyndryl-frontend and kyndryl-backend)<br>
 1.5.1) yourname-frontend<br>
 ![image](images/004k8scluster.png)
 ![image](images/005addk8s.png)
@@ -66,7 +66,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/010saveandexit.png)<br>
 
 1.6) Create App Stack Site: Manage > Site Management > App Stack Sites<br>
-(Add two new App Stack Sites with Name: yourname-frontend and yourname-backend)<br>
+(Add two new App Stack Sites with Name: yourname-frontend and yourname-backend, please use your actual name - yourname value for uniqueness and ease of identification/reference)<br>
 1.6.1) yourname-frontend<br>
 ![image](images/007addappstack.png)
 ![image](images/007addappstacksite.png)
