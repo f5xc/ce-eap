@@ -89,7 +89,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 1st CE<br>
 ![image](images/013ce1login.png)<br>
 1st CE, enter/select following values and leave other values default<br>
-(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)<br>
+(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values, remember to change yourname to your actual name configured at previous step e.g., peter-frontend or kyndryl-frontend etc)<br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
@@ -105,7 +105,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 2nd CE<br>
 ![image](images/013ce2login.png)<br>
 2nd CE, enter/select following values and leave other values default<br>
-(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values)<br>
+(Latitude / Longtitude to chart CE location on F5XC map - enter your desire values, remember to change yourname to your actual name configured at previous step e.g., peter-frontend or kyndryl-frontend etc)<br>
 | Field | Value | 
 | --------------- | --------------- |
 | Token | Site Token UID value copied earlier |
