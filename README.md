@@ -153,14 +153,14 @@ Example of Linux/Mac command:<br>
 2.5) To view the name of your F5XC application namespace: Distributed Apps > (refer to breadcrumb value on top) > Sites<br>
 ![image](images/020namespacevalue.png)<br>
 
-2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
+2.6) Create your frontend (1st CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step, e.g., demo - actual name unique and vary for each person)<br> 
 Example of Windows command:<br>
 kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml create namespace demo<br>
 Example of Linux/Mac command:<br>
 ./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml create namespace demo<br>
 ![image](images/019createnamespace.png)<br>
 
-2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step)<br> 
+2.7) Create your backend (2nd CE) Kubernetes namespace (using the same name as your F5XC application namespace observed at previous step, e.g., demo - actual name unqiue and vary for each person)<br> 
 Example of Windows command:<br>
 kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml create namespace demo<br>
 Example of Linux/Mac command:<br>
