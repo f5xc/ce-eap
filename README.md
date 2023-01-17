@@ -262,6 +262,8 @@ Distributed Apps > Manage > Load Balancers > TCP Load Balancers > Add TCP load b
 3.3) Create HTTP Load Balancer to expose frontend app to the Internet at Regional Edge (RE)<br>
 Distributed Apps > Manage > Load Balancers > HTTP Load Balancers > Add HTTP load balancer<br>
 ![image](images/039createhttplb.png)<br>
+Metadata Name: yourname-frontend-http e.g., kyndryl-frontend-http<br>
+Domains and LB Type: yourname.yourdomain.edgecloud.ml e.g., kyndryl.kyndryl.edgecloud.ml or peter.ntt.edgecloud.ml etc<br>
 ![image](images/040createhttplb.png)<br>
 ![image](images/041addorigin.png)<br>
 ![image](images/010saveandexit.png)<br>
