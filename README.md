@@ -272,10 +272,12 @@ Example, yourname.yourdomain.edgecloud.ml<br>
 ![image](images/043fqdndone.png)<br>
 
 <h4>SECTION 4: Configure WAAP</a></h4>
-This section focusses on setting up Wab Application and API Protection (WAAP)<br><br>
+This section focusses on setting up Wab Application and API Protection (WAAP)<br>
+A live walkthrough on WAAP feature during lab time.<br><br>
 
 <h4>SECTION 5: Quick Comparison on generic Kubernetes Deployment vs F5XC Managed K8s/vK8s (App Stack)</a></h4>
-This section focusses on comparing generic Kubernetes Deployment and F5XC Kubernetes<br><br>
+This section focusses on comparing generic Kubernetes Deployment and F5XC Kubernetes<br>
+A live fundamental comparison before or during lab time.<br><br>
 
 <a href="#toc">Table of Content</a>
 <a id="ack"></a>
