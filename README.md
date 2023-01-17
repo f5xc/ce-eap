@@ -119,9 +119,9 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/013ceexit.png)<br>
   
 1.10) Approve New Site Registration: Manage > Site Management > Registrations<br>
+![image](images/014ceregistration.png)<br>
 (Click on the two blue ticks on 1st and 2nd CEs to approve the registrations)<br>
 ![image](images/014approveregistration.png)<br>
-![image](images/014ceregistration.png)<br>
 The New Sites will be moved to Other Registrations after approval<br>
 ![image](images/015otherregistration.png)<br>
 Monitor the New Sites status: Sites > Site List (Until there are online and turned green)<br>
