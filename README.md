@@ -47,7 +47,7 @@ This section focusses on setting up customer sites (Cloud or Edge) VMs<br><br>
 ![image](images/002ceandedge.png)<br>
 
 1.4) Create/Retrieve your Site Token: Manage > Site Management > Site Tokens<br>
-(Add new Site Token with Name format like yourname-token e.g., peter-token or kyndryl-token etc, copy and keep the UID value (saved it) once Site Token created for later use i.e., copy and paste)<br>
+(Add new Site Token with Name format like yourname-token e.g., peter-token or kyndryl-token etc, please use your actual name for ease of identification/reference, copy and keep the UID value (saved it) once Site Token created for later use i.e., copy and paste)<br>
 ![image](images/003sitetokens.png)
 ![image](images/003addsitetoken.png)
 ![image](images/003copysitetokenuid.png)<br>
