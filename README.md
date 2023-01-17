@@ -138,12 +138,12 @@ This section focusses on deploying sample application into customer sites (Cloud
 
 2.3) Test connectivity from your laptop to the 1st CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file<br>
 Example of Windows command:<br>
-kubectl --kubeconfig ves_system_yourname-frontend_kubeconfig_global.yaml get all<br>
+kubectl --kubeconfig ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
 Example of Linux/Mac command:<br>
-./kubectl --kubeconfig ./ves_system_yourname-frontend_kubeconfig_global.yaml get all<br>
+./kubectl --kubeconfig ./ves_system_kyndryl-frontend_kubeconfig_global.yaml get all<br>
 ![image](images/018kubectlconnect1st.png)<br>
 
-2.4) Test connectivity from your laptop to the 2nd CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file and kubectl binary<br> 
+2.4) Test connectivity from your laptop to the 2nd CE K8s cluster node with downloaded kubectl binary and Global Kubeconfig file<br> 
 Example of Windows command:<br>
 kubectl --kubeconfig ves_system_yourname-backend_kubeconfig_global.yaml get all<br>
 Example of Linux/Mac command:<br>
